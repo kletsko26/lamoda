@@ -1,0 +1,12 @@
+@use "@styles/mixins" as *;
+@use "@styles/constants" as *;
+@use "@styles/colors" as *;
+
+.box {
+  @include box;
+}
+
+.asideWrapper {
+  background-color: $bg-color;
+  padding: 5px 10px 10px;
+}

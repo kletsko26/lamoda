@@ -1,0 +1,47 @@
+@use "@styles" as *;
+
+.itemWrapper {
+  width: $basic-column-width;
+  background-color: $bg-color;
+}
+
+.image {
+  width: $basic-column-width;
+  height: $basic-column-width;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: $active-color;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 16px;
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+.description {
+  color: $active-color;
+  font-size: 13px;
+}
+
+.info {
+  margin-top: 5px;
+  b {
+    font-weight: 700;
+  }
+}

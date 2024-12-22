@@ -1,0 +1,17 @@
+@use "@styles" as *;
+
+.colorContainer {
+  display: flex;
+  margin-bottom: 5px;
+  gap: 8px;
+  input {
+    &:checked + label {
+      font-weight: 600;
+    }
+  }
+  label {
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+}

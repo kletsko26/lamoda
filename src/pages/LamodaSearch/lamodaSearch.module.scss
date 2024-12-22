@@ -1,0 +1,27 @@
+@use "@styles" as *;
+
+.grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "aside main main";
+  // grid-template-rows: var(--header-height) 1fr var(--footer-height);
+  grid-template-columns: $basic-column-width 1fr 1fr;
+
+  gap: $grid-gap;
+}
+
+.header {
+  @include area;
+  grid-area: header;
+}
+
+.aside {
+  @include area;
+  grid-area: aside;
+}
+.main {
+  @include area;
+  grid-area: main;
+}

@@ -1,0 +1,26 @@
+@use "@styles" as *;
+
+.buttonsWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: $grid-gap;
+  align-items: center;
+}
+
+.checkboxButton {
+  input {
+    display: none;
+    &:checked + label {
+      background-color: $active-color;
+    }
+  }
+  label {
+    @include box;
+    cursor: pointer;
+    min-width: $basic-column-width;
+    
+    transition: 0.25s all;
+  }
+}

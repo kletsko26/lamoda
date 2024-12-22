@@ -1,0 +1,21 @@
+@use "@styles" as *;
+
+.priceContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.priceInput {
+  @include with-border;
+  background-color: $bg-color;
+  width: 40%;
+}
+.divider {
+  display: block;
+  margin: 0 4px;
+  height: 1px;
+  width: 9px;
+  background-color: $border-color;
+  color: transparent;
+}
